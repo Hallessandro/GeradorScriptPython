@@ -1,0 +1,10 @@
+INSERT INTO COMUM.TESTE (id, nome) VALUES (1,'Eldon Base for stackable storage shelf, platinum');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (2,'1.7 Cubic Foot Compact "Cube" Office Refrigerators');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (3,'Cardinal Slant-D® Ring Binder, Heavy Gauge Vinyl');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (4,'R380');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (5,'Holmes HEPA Air Purifier');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (6,'G.E. Longer-Life Indoor Recessed Floodlight Bulbs');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (7,'Angle-D Binders with Locking Rings, Label Holders');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (8,'SAFCO Mobile Desk Side File, Wire Frame');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (9,'SAFCO Commercial Wire Shelving, Black');
+INSERT INTO COMUM.TESTE (id, nome) VALUES (10,'Xerox 198');
