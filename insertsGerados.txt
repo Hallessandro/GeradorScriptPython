@@ -1,10 +1,240 @@
-INSERT INTO COMUM.TESTE (id, nome) VALUES (1,'Eldon Base for stackable storage shelf, platinum');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (2,'1.7 Cubic Foot Compact "Cube" Office Refrigerators');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (3,'Cardinal Slant-DÂ® Ring Binder, Heavy Gauge Vinyl');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (4,'R380');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (5,'Holmes HEPA Air Purifier');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (6,'G.E. Longer-Life Indoor Recessed Floodlight Bulbs');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (7,'Angle-D Binders with Locking Rings, Label Holders');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (8,'SAFCO Mobile Desk Side File, Wire Frame');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (9,'SAFCO Commercial Wire Shelving, Black');
-INSERT INTO COMUM.TESTE (id, nome) VALUES (10,'Xerox 198');
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    1, Eldon Base for stackable storage shelf, platinum, 4, Muhammed MacIntyre, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 3;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    2, 1.7 Cubic Foot Compact "Cube" Office Refrigerators, 4, Barry French, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 293;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    3, Cardinal Slant-DÂ® Ring Binder, Heavy Gauge Vinyl, 4, Barry French, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 293;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    4, R380, 4, Clay Rozendal, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 483;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    5, Holmes HEPA Air Purifier, 4, Carlos Soltero, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 515;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    6, G.E. Longer-Life Indoor Recessed Floodlight Bulbs, 4, Carlos Soltero, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 515;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    7, Angle-D Binders with Locking Rings, Label Holders, 4, Carl Jackson, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 613;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    8, SAFCO Mobile Desk Side File, Wire Frame, 4, Carl Jackson, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 613;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    9, SAFCO Commercial Wire Shelving, Black, 4, Monica Federle, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 643;
+
+INSERT INTO patrimonio.movimentacao_bem(
+                    id, data_saida, data_recebimento, numero_guia, ano_guia, 
+                    observacao, 
+                    id_unidade_origem, id_unidade_destino, tipo_movimentacao, id_bem, 
+                    id_termo_novo, id_termo_anterior, valor, id_usuario, data_cadastro, 
+                    id_usuario_recebimento, bens_desconhecidos, id_local_bem, id_usuario_estorno, 
+                    data_estorno, justificativa_estorno, tipo_status_movimentacao, 
+                    id_local_bem_destino, justificativa, valor_anterior, id_registro_entrada_transf, 
+                    id_usuario_cadastro, necessita_autenticacao, bem_terceiro, id_ajuste_valor_contabil, 
+                    id_mov_associada, codmerg, id_unidade_origem_legado, id_unidade_destino_legado, 
+                    codmerg_lagarto, codmerg_sc)
+            SELECT NEXTVAL('patrimonio.movimento_bem_seq'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRVAL('public.seq_12_2018'), 2018,
+                    'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS.', 
+                    10, Xerox 198, 4, Dorothy Badders, 
+                    CURRVAL('public.termo_seq'), id_termo_responsabilidade, valor_acumulado, 1, CURRENT_TIMESTAMP, 
+                    1, null, null, null, 
+                    null, null, null, 
+                    null, null, null, null, 
+                    1, false, false, null, 
+                    null, null, null, null, 
+                    null, null
+            FROM patrimonio.bem
+            WHERE id_unidade_resp_atual = 678;
+
