@@ -5,11 +5,11 @@ INSERT INTO patrimonio.termo_responsabilidade(
             empenho_funpec, id_local_bem, id_unidade_origem, id_local_origem, 
             id_responsavel, id_responsavel_local, codmerg, id_unidade_legado, 
             codmerg_lagarto, codmerg_sc)
-    VALUES (NEXTVAL('public.termo_seq'), NEXTVAL('public.seq_3_2018'), 2018, CURRENT_TIMESTAMP, 169, 657, 
+    VALUES (NEXTVAL('public.termo_seq'), NEXTVAL('public.seq_3_2018'), 2018, CURRENT_TIMESTAMP, 169, 282, 
             'TRANSFERÊNCIA CADASTRADA DIRETAMENTE NO BANCO DE DADOS- Tarefa #.', 
             10, null, 1, null, null, 
             null, null, 13, null, 
-            3624, null, null, null, 
+            3085, null, null, null, 
             null, null);
  
  
