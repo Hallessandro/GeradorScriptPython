@@ -1,0 +1,8 @@
+instituicao = input("Digite a sigla da instituicao: ")
+numTarefa = input('Digite o número da tarefa: ')
+print("""/* INICIO CUSTOMIZACAO ESPECIFICA '{instituicao}' - TAREFA '{numTarefa}' */""".format(instituicao=instituicao, numTarefa=numTarefa))
+print("""/* FIM CUSTOMIZACAO ESPECIFICA '{instituicao}' - TAREFA '{numTarefa}' */""".format(instituicao=instituicao, numTarefa=numTarefa))
+print("\n")
+print("""<%-- INICIO CUSTOMIZACAO ESPECIFICA '{instituicao}' - TAREFA '{numTarefa}' --%>""".format(instituicao=instituicao, numTarefa=numTarefa))
+print("""<%-- FIM CUSTOMIZACAO ESPECIFICA '{instituicao}' - TAREFA '{numTarefa}' --%>""".format(instituicao=instituicao, numTarefa=numTarefa))
+input("Aperte ENTER para sair")

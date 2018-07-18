@@ -14,9 +14,15 @@ def montaInt(arquivo):
 
 def montarQuery(nomeTabela, nomeCampo, valores):
     listaValores = ', '.join(valores)
-    return '''SELECT * FROM {nomeTabela} WHERE {nomeCampo} IN ({valores})'''.format(nomeTabela=nomeTabela, nomeCampo=nomeCampo, valores=listaValores);
+    if(len(listaValores) > 300):
+        f = open('arquivos/resultadoInSql.txt','w')
+        f.write('''SELECT * FROM {nomeTabela} WHERE {nomeCampo} IN ({valores});'''.format(nomeTabela=nomeTabela, nomeCampo=nomeCampo, valores=listaValores))
+        return "Resultado gerado no arquivo /arquivos/resultadoInSql.txt, devido a grande quantidade de dados."
+    else:
+        return '''SELECT * FROM {nomeTabela} WHERE {nomeCampo} IN ({valores});'''.format(nomeTabela=nomeTabela, nomeCampo=nomeCampo, valores=listaValores)
     
 ARQUIVO = 'arquivos/lista.txt' #Caminho do arquivo que vai ser lido   
-NOME_TABELA = 'schema.tabela' #Nome da tabela que será feito o Select
-CAMPO_COMPARADOR = 'nome_campo' #Campo será feita o IN
-print(montarQuery(NOME_TABELA, CAMPO_COMPARADOR, montaString(ARQUIVO)))
+tabela = input("Informe o nome da tabela: ")
+campo = input("Informe o campo utilizado na comparação: ") #Campo será feita o IN
+print(montarQuery(tabela, campo, montaInt(ARQUIVO)))
+input("Aperte enter para sair")

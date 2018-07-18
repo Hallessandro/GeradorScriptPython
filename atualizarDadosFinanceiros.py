@@ -10,7 +10,7 @@ def main():
 	# conn.cursor will return a cursor object, you can use this cursor to perform queries
     cursor = conn.cursor()
 	# execute the Query
-    cursor.execute("SELECT * FROM FINANCEIRO.FICHA_FINANCEIRA WHERE ANO = 2018 limit 1;")
+    cursor.execute("SELECT * FROM FINANCEIRO.FICHA_FINANCEIRA WHERE ANO = 2018;")
     #open the file
     f = open('updatesFicha.txt','w')
     # retrieve the records from the database        
@@ -29,4 +29,10 @@ def montarUpdate(row):
         rubrica=row[16], multiplicador=row[17], sequencia=row[18], ano=row[20], origem=row[21])
      return update
 if __name__ == "__main__":
-	main()
+	try:
+		main()
+		input('Se você não está vendo uma msg de erro é pq tudo deu certo e os dados foram gerados no arquivo, aperte ENTER para fechar. ')
+	except: 
+		print ("Deu ruim: ", sys.exc_info()[0])
+		raise
+	
